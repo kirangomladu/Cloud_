@@ -1,0 +1,54 @@
+firstly create volume 
+then attach volume
+then go on terminal
+connect with server 
+#ssh -i "webkey.pem" ubuntu@ec2-52-90-20-12.computer.amazonaws.com
+aftr connecting to ubuntu
+
+(list block device)
+#lsblk
+
+check disk is raw or not means either any data on disk or not(all xvdf/hard disk are present in dev) 
+#sudo file -s /dev/xvdf or
+ the sudo file -s /dev/xvdg
+ubuntu@ip-172-31-36-189:~$ sudo file -s /dev/xvdg
+/dev/xvdg: data(if it show dat then it mens it raw data)
+
+if we want to read write this disk then we firstly formate it
+(formate disk--and mount disk on file system) 
+
+mkfs cmmand:it format and install the file system.
+#ubuntu@ip-172-31-36-189:~$ whatis mkfs
+mkfs (8)             - build a Linux filesystem
+
+#ubuntu@ip-172-31-36-189:~$ sudo mkfs -t ext4 /dev/xvdg
+ make file system ext4 in /dev/xvdg
+(-t define type of file system you can give ext4/ext5,ext7 even can give ntfs fat32)
+now file are there or not check using
+#sudo file -s /dev/xvdg
+
+now we mount the hard disk on directory 
+so to mount create directory fileserver
+#sudo mkdir /fileserver
+
+#ls /
+
+now mount /dev/xvdg on fileserver
+#sudo mount /dev/xvdg  /fileserver
+
+#lsblk
+show the file server on xvdf
+if we write and read then go to filesever
+#cd /fileserver
+#ls
+if it show lost +fount:then freashaly formated disk
+now remove this dir
+#sudo rmdir lost+found
+#sudo nano abc
+
+
+
+
+
+
+
