@@ -85,4 +85,5 @@ Step 5 of 5: Setting up agent as a daemon ...DONE
 
 after that go on cloud watch-logs
 click on link/var/sysylog ---
-in logstream--click on ip--it shows then whole log
+in logstream--click on ip--it shows then whole log here we can add filter and we can also define the filter for log
+to check log of CPU then it also done.
