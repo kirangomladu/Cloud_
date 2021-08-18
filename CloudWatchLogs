@@ -74,4 +74,15 @@ Choose Log Event timestamp format:
 Choose initial position of upload:                                                                                        
 1. From start of file.                                                                                                  
 2. From end of file.                                                                                                  
-Enter choice [1]: 1  
+Enter choice [1]: 1 
+Choose initial position of upload:
+  1. From start of file.
+  2. From end of file.
+Enter choice [1]: 1
+More log files to configure? [Y]: n
+
+Step 5 of 5: Setting up agent as a daemon ...DONE
+
+after that go on cloud watch-logs
+click on link/var/sysylog ---
+in logstream--click on ip--it shows then whole log
