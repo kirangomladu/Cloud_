@@ -87,3 +87,11 @@ after that go on cloud watch-logs
 click on link/var/sysylog ---
 in logstream--click on ip--it shows then whole log here we can add filter and we can also define the filter for log
 to check log of CPU then it also done.
+
+
+
+Event:in cloudwatch based on event we can make cloudwatch to take some action in automated form
+ex.if hard disk is full then add new hard disk
+ex.taking snapshop every week automatically
+
+suppose we taking snap in automated way--go event--create rule---sheduled--fixed rate(when it show i 5 min )
