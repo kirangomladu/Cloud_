@@ -39,9 +39,10 @@ $ ./mon-put-instance-data.pl --mem-util --verify --verbose
 
 $ ./mon-put-instance-data.pl --mem-used-incl-cache-buff --mem-util --mem-used --mem-avail
 
+(every time whe we want memory the we will send this to the aws for this we schedule the process)
 
 ## Scheduling the process of sending metrics
-
+$cd
 $ crontab -e
 
 */5 * * * * ~/aws-scripts-mon/mon-put-instance-data.pl --mem-used-incl-cache-buff --mem-util --disk-space-util --disk-path=/ --from-cron
